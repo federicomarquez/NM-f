@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion-show-admin</title>
+    <script src="https://kit.fontawesome.com/e0d6dd6321.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-XHxbdhrkFNJB/HRPNvTuz8AOIljnXnkzQPA+sKoi4vYCDjtPpEYAD2VPZNByUHcBKEQoKfvzW6sTtQzUxmPECg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    Noches Mágicas
+                </a>
+            </div>
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+
+                    <a class="navbar-item" href="/">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </a>
+                    <figure class="image is-64x64 is-rounded">
+                        <img class="is-rounded" src="../../imagenes/fotoDePerfil.jpeg">
+                    </figure>
+                    <a class="navbar-item" href="/">
+                        Nombre de Usuario
+                    </a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- aca esta el buscador-->
+    <section class="section has-background-white is-small search-container">
+        <div class="container">
+            <div class="columns is-multiline ">
+                <div class="column is-one-third ">
+                    <div class="field is-flex is-justify-content-flex-end">
+                        <div class="control">
+                            <input class="input search-input" type="text" placeholder="Artista">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="field is-flex is-justify-content-center">
+                        <div class="control">
+                            <input class="input search-input" type="text" placeholder="Ubicación">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third ">
+                    <div class="field is-flex is-align-items-flex-end">
+
+                        <div class="control search-button p-1">
+                            <button class="button is-primary is-small">
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- aca estan los shows-->
+    <section class="section columns overflow-scroll">
+        <div class="column espacio-vacio-izquierda is-1 "></div>
+        <div class="column espacio-centro is-10 " style=" height: 20em; 
+        overflow-y: auto;
+        scroll-behavior: smooth;">
+
+           
+
+            <div class="card columns m-5">
+                <div class="card-image column is-3">
+                    <img src="../../imagenes/ac-dc-power-uptour.png" alt="Imagen del card">
+                </div>
+                <div class="card-content column is-7">
+                    <p class="title is-8">Metalica - WorldWired Tour</p>
+                    <p>Estadio Único de La Plata</p>
+                    <p>20 de noviembre de 2024</p>
+                    <p>Precio: $3.000</p>
+                </div>
+                <div class="card-options column is-2">
+                    <div class="buttons has-addons">
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-trash"></i></button>
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="button is-small is-primary">Ver Detalle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card columns m-5">
+                <div class="card-image column is-3">
+                    <img src="../../imagenes/ac-dc-power-uptour.png" alt="Imagen del card">
+                </div>
+                <div class="card-content column is-7">
+                    <p class="title is-8">Metalica - WorldWired Tour</p>
+                    <p>Estadio Único de La Plata</p>
+                    <p>20 de noviembre de 2024</p>
+                    <p>Precio: $3.000</p>
+                </div>
+                <div class="card-options column is-2">
+                    <div class="buttons has-addons">
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-trash"></i></button>
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="button is-small is-primary">Ver Detalle</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card columns m-5">
+                <div class="card-image column is-3">
+                    <img src="../../imagenes/ac-dc-power-uptour.png" alt="Imagen del card">
+                </div>
+                <div class="card-content column is-7">
+                    <p class="title is-8">Metalica - WorldWired Tour</p>
+                    <p>Estadio Único de La Plata</p>
+                    <p>20 de noviembre de 2024</p>
+                    <p>Precio: $3.000</p>
+                </div>
+                <div class="card-options column is-2">
+                    <div class="buttons has-addons">
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-trash"></i></button>
+                        <button class="button is-small is-outlined"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="button is-small is-primary">Ver Detalle</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- boton de sumar show-->
+        <div class="column espacio-vacio-derecho is-1  ">
+            <button class="button  is-danger is-large  ">
+                <span class="icon is-small is-white is-fixed-bottom-right">
+                    <i class="fas fa-plus"></i>
+                </span>
+            </button>
+        </div>
+        <!-- boton de sumar show-->
+
+
+
+
+
+    </section>
+        <!--Seccion de fechas-->
+    <hr class="is-thick is-primary is-black ">
+    <section class="fechas pl-5">
+        Fechas disponibles
+        <div class="contenedor-fechas ">
+            <div class="fechas field is-grouped is-justify-content-center">
+                <div class="box p-3 m-2 has-background-link has-text-white">
+                    <div class="data-container ">
+                        <p class="day">Lunes</p>
+                        <p class="date">14 de noviembre de 2023</p>
+                        <p class="time">10:25 AM</p>
+                    </div>
+                </div>
+                <div class="box p-3 m-2 has-background-info has-text-white ">
+                    <div class="data-container">
+                        <p class="day">Lunes</p>
+                        <p class="date">14 de noviembre de 2023</p>
+                        <p class="time">10:25 AM</p>
+                    </div>
+                </div>
+                <div class="box p-3 m-2 has-background-info has-text-white">
+                    <div class="data-container">
+                        <p class="day">Lunes</p>
+                        <p class="date">14 de noviembre de 2023</p>
+                        <p class="time">10:25 AM</p>
+                    </div>
+                </div>
+
+                <!-- boton de sumar show-->
+
+                <button class="button  is-danger is-fixed is-bottom is-right ">
+                    <span class="icon is-small is-white ">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </button>
+
+                <!-- boton de sumar show-->
+
+            </div>
+
+        </div>
+
+    </section>
+
+     <hr class="is-thick is-primary is-black "> 
+
+    <section class="estadisticas ">
+
+        <div class="contenedor-fechas  ">
+            <div class="fechas field is-grouped is-justify-content-center ">
+                <div class="box p-3 m-2  has-background-success-dark has-text-white">
+                    <div class="data-container">
+                        <p class="titulo">ventas</p>
+                        <p class="dato">$1.500.000</p>
+                    </div>
+                </div>
+                <div class="box p-3 m-2 has-background-info has-text-white">
+                    <div class="data-container">
+                        <p class="titulo">personas en espera</p>
+                        <p class="dato"> 350 personas</p>
+                    </div>
+                </div>
+
+                <div class="box p-3 m-2 has-background-success has-text-white">
+                    <div class="data-container">
+                        <p class="titulo">rentabilidad</p>
+                        <p class="dato">60%</p>
+                    </div>
+                </div>
+
+                <div class="box p-3 m-2 has-background-danger has-text-white">
+                    <div class="data-container">
+                        <p class="titulo">funciones-sold-out</p>
+                        <p class="dato">1</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer no-padding is-fixed-bottom">
+        <div class="container has-text-centered">
+            <p>Noches Mágicas &copy; 2024</p>
+            <a href="https://www.instagram.com/nochesmagicas/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nochesmagicas/">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>

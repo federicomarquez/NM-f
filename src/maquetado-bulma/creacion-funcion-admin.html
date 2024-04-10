@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion-funcion-admin</title>
+    <script src="https://kit.fontawesome.com/e0d6dd6321.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-XHxbdhrkFNJB/HRPNvTuz8AOIljnXnkzQPA+sKoi4vYCDjtPpEYAD2VPZNByUHcBKEQoKfvzW6sTtQzUxmPECg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    Noches Mágicas
+                </a>
+            </div>
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+
+                    <a class="navbar-item" href="/">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </a>
+                    <figure class="image is-64x64 is-rounded">
+                        <img class="is-rounded" src="../../imagenes/fotoDePerfil.jpeg">
+                    </figure>
+                    <a class="navbar-item" href="/">
+                        Nombre de Usuario
+                    </a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- aca esta el buscador-->
+    <section class="section has-background-white is-small search-container">
+        <div class="container">
+            <div class="columns is-multiline ">
+                <div class="column is-one-third ">
+                    <div class="field is-flex is-justify-content-flex-end">
+                        <div class="control">
+                            <input class="input search-input" type="text" placeholder="Artista">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="field is-flex is-justify-content-center">
+                        <div class="control">
+                            <input class="input search-input" type="text" placeholder="Ubicación">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third ">
+                    <div class="field is-flex is-align-items-flex-end">
+
+                        <div class="control search-button p-1">
+                            <button class="button is-primary is-small">
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- aca estan los shows-->
+    <section class="section ">
+        <div class="este-es-el-modal ">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Agregar Funacion a xxxxxxxxxxxx</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                        <label class="label">Fecha:</label>
+                        <div class="control">
+                            <input type="date" class="input" id="fecha">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Hora:</label>
+                        <div class="control">
+                            <input type="time" class="input" id="hora">
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-primary">Aceptar</button>
+                    <button class="button">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer no-padding is-fixed-bottom">
+        <div class="container has-text-centered">
+            <p>Noches Mágicas &copy; 2024</p>
+            <a href="https://www.instagram.com/nochesmagicas/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nochesmagicas/">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>

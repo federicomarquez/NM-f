@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil-usuario-amigos</title>
+    <script src="https://kit.fontawesome.com/e0d6dd6321.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-XHxbdhrkFNJB/HRPNvTuz8AOIljnXnkzQPA+sKoi4vYCDjtPpEYAD2VPZNByUHcBKEQoKfvzW6sTtQzUxmPECg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    Noches Mágicas
+                </a>
+            </div>
+            <div class="navbar-menu">
+
+                <div class="navbar-end">
+
+                    <a class="navbar-item" href="/">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </a>
+                    <figure class="image is-64x64 is-rounded">
+                        <img class="is-rounded" src="../../imagenes/fotoDePerfil.jpeg">
+                    </figure>
+                    <a class="navbar-item" href="/">
+                        Nombre de Usuario
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="box">
+                        <h1 class="title is-4">Información de usuario</h1>
+                        <form action="/profile" method="post">
+                            <div class="field">
+                                <label for="username" class="label">Nombre</label>
+                                <div class="control">
+                                    <input type="text" name="username" class="input" value="Lionel" required>
+                                </div>
+                                <label for="username" class="label">Apellido</label>
+                                <div class="control">
+                                    <input type="text" name="username" class="input" value="Messi" required>
+                                </div>
+                                <label for="username" class="label">Fecha de nacimiento</label>
+                                <div class="control">
+                                    <input type="date" name="date" class="input" value="Messi" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="email" class="label">Nombre de usuario</label>
+                                <div class="control">
+                                    <input type="text" id="email" name="email" class="input"
+                                        value="usuarioejemplo@email.com" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="password" class="label">Contraseña</label>
+                                <div class="control">
+                                    <input type="password" id="password" name="password" class="input" required>
+                                </div>
+                            </div>
+                            <label for="friends" class="label">Amigos</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select name="friends" id="friends" required>
+                                        <option value="">Selecciona un amigo</option>
+                                        <option value="1">Luis Suarez</option>
+                                        <option value="2">Neymar Jr.</option>
+                                        <option value="3">Sergio Agüero</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <div class="control m-5">
+                                        <button type="submit" class="button is-primary">Guardar cambios</button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column is-9">
+                <div class="tabs is-boxed">
+                    <ul>
+                        <li><a href="#">Entradas compradas</a></li>
+                        <li class="is-active"><a href="#">Amigos</a></li>
+                        <li><a href="#">Comentarios</a></li>
+                    </ul>
+                </div>
+                <div class="content m-5">
+                    <h2 class="title is-5">Amigos</h2>
+                    <div class="contenedor-amigos columns m-5 is-multiline">
+
+                        <div class="card-amigo column columns is-5 m-1 box">
+                            <div class="column is-4">
+                                <figure class="image is-64x64  m-3">
+                                    <img class="is-rounded" src="../../imagenes/fotoDePerfil.jpeg">
+                                </figure>
+                            </div>
+                            <div class="card-content column is-7">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Lionel Messi</p>
+                                        <p class="subtitle is-6">Argentina</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-delete-icon  column is-1 is-flex is-justify-content-flex-end is-align-items-flex-end">
+                                <button class="button is-small is-danger">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-amigo column columns is-5 m-1 box">
+                            <div class="column is-4">
+                                <figure class="image is-64x64  m-3">
+                                    <img class="is-rounded" src="../../imagenes/cristianoRonaldoPerfil.jpg">
+                                </figure>
+                            </div>
+                            <div class="card-content column is-7">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Cristiano Ronaldo</p>
+                                        <p class="subtitle is-6">Portugal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-delete-icon  column is-1 is-flex is-justify-content-flex-end is-align-items-flex-end">
+                                <button class="button is-small is-danger">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-amigo column columns is-5 m-1 box">
+                            <div class="column is-4">
+                                <figure class="image is-64x64  m-3">
+                                    <img class="is-rounded" src="../../imagenes/mbappePerfil.jpg">
+                                </figure>
+                            </div>
+                            <div class="card-content column is-7">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Kylian Mbappé</p>
+                                        <p class="subtitle is-6">Francia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-delete-icon  column is-1 is-flex is-justify-content-flex-end is-align-items-flex-end">
+                                <button class="button is-small is-danger">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-amigo column columns is-5 m-1 box">
+                            <div class="column is-4">
+                                <figure class="image is-64x64  m-3">
+                                    <img class="is-rounded" src="../../imagenes/usainBoltPerfil.jpeg">
+                                </figure>
+                            </div>
+                            <div class="card-content column is-7">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Usain Bolt</p>
+                                        <p class="subtitle is-6">Jamaica</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-delete-icon  column is-1 is-flex is-justify-content-flex-end is-align-items-flex-end">
+                                <button class="button is-small is-danger">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer no-padding is-fixed-bottom">
+        <div class="container has-text-centered">
+            <p>Noches Mágicas &copy; 2024</p>
+            <a href="https://www.instagram.com/nochesmagicas/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nochesmagicas/">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
